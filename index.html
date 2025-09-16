@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Code Player — HTML / CSS / JS Live Editor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Code Player — HTML / CSS / JS (live)</h1>
+<div class="toolbar">
+<button id="runBtn" class="btn">Run Now</button>
+<button id="resetBtn" class="btn">Reset</button>
+<button id="clearBtn" class="btn">Clear Code</button>
+</div>
+</header>
+
+
+<main class="container">
+<section class="panel">
+<header>
+<div class="dot html-dot"></div>
+<div>
+<div class="label">HTML</div>
+<div class="small">Structure & markup</div>
+</div>
+</header>
+<textarea id="html" spellcheck="false"></textarea>
+</section>
+
+
+<section class="panel">
+<header>
+<div class="dot css-dot"></div>
+<div>
+<div class="label">CSS</div>
+<div class="small">Styling</div>
+</div>
+</header>
+<textarea id="css" spellcheck="false"></textarea>
+</section>
+
+
+<section class="panel">
+<header>
+<div class="dot js-dot"></div>
+<div>
+<div class="label">JavaScript</div>
+<div class="small">Behavior</div>
+</div>
+</header>
+<textarea id="js" spellcheck="false"></textarea>
+</section>
+
+
+<section class="panel">
+<header>
+<div class="dot out-dot"></div>
+<div>
+<div class="label">Output</div>
+<div class="small">Live preview</div>
+</div>
+</header>
+<iframe id="output" class="output-frame" sandbox="allow-scripts allow-same-origin"></iframe>
+</section>
+</main>
+
+
+<footer>Tip: Use Ctrl+S to run instantly</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
